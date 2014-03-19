@@ -1,0 +1,31 @@
+
+buildscript {
+    repositories { maven { url 'http://repo.spring.io/libs-snapshot' } }
+    dependencies { classpath('org.springframework.boot:spring-boot-gradle-plugin:1.0.0.RC4') }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'spring-boot'
+
+repositories {
+    mavenCentral()
+    maven { url "http://repo.spring.io/libs-snapshot" }
+}
+
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    //    compile 'org.vaadin.spring:spring-boot-vaadin:0.0.2-SNAPSHOT'
+    compile files(
+        'libs/spring-boot-vaadin-0.0.2-SNAPSHOT.jar',
+        'libs/spring-vaadin-0.0.2-SNAPSHOT.jar',
+//        'libs/spring-security-vaadin-0.0.2-20140311.122150-2.jar',
+//        'libs/spring-vaadin-security-0.0.2-SNAPSHOT.jar',
+        'libs/spring-vaadin-stuff-0.0.2-SNAPSHOT.jar',
+        'libs/spring-vaadin-touchkit-0.0.2-SNAPSHOT.jar')
+    compile 'com.vaadin:vaadin-themes:7.1.12'
+    compile 'com.vaadin:vaadin-client-compiled:7.1.12'
+    compile 'com.vaadin:vaadin-server:7.1.12'
+}
+
+task wrapper(type: Wrapper) { gradleVersion = '1.11' }
