@@ -21,8 +21,9 @@ dependencies {
         'libs/spring-vaadin-0.0.2-SNAPSHOT.jar',
 //        'libs/spring-security-vaadin-0.0.2-20140311.122150-2.jar',
 //        'libs/spring-vaadin-security-0.0.2-SNAPSHOT.jar',
-        'libs/spring-vaadin-stuff-0.0.2-SNAPSHOT.jar',
-        'libs/spring-vaadin-touchkit-0.0.2-SNAPSHOT.jar')
+        'libs/spring-vaadin-stuff-0.0.2-SNAPSHOT.jar'
+//        'libs/spring-vaadin-touchkit-0.0.2-SNAPSHOT.jar'
+        )
     compile 'com.vaadin:vaadin-themes:7.1.12'
     compile 'com.vaadin:vaadin-client-compiled:7.1.12'
     compile 'com.vaadin:vaadin-server:7.1.12'
