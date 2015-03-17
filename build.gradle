@@ -1,7 +1,7 @@
 
 buildscript {
-    repositories { maven { url 'http://repo.spring.io/libs-snapshot' } }
-    dependencies { classpath('org.springframework.boot:spring-boot-gradle-plugin:1.0.0.RC4') }
+    repositories { jcenter() }
+    dependencies { classpath('org.springframework.boot:spring-boot-gradle-plugin:+') }
 }
 
 apply plugin: 'java'
@@ -9,8 +9,7 @@ apply plugin: 'eclipse'
 apply plugin: 'spring-boot'
 
 repositories {
-    mavenCentral()
-    maven { url "http://repo.spring.io/libs-snapshot" }
+    jcenter()
 }
 
 dependencies {
@@ -29,4 +28,4 @@ dependencies {
     compile 'com.vaadin:vaadin-server:7.1.12'
 }
 
-task wrapper(type: Wrapper) { gradleVersion = '1.11' }
+task wrapper(type: Wrapper) { gradleVersion = '2.3' }
