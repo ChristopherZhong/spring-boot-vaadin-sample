@@ -1,4 +1,4 @@
-package hello;
+package io.github.chriszhong.hello;
 
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.spring.annotation.SpringUI;

@@ -1,4 +1,4 @@
-package hello;
+package io.github.chriszhong.hello;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
